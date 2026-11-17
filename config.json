@@ -2,24 +2,24 @@
   "log": { "loglevel": "warning" },
   "inbounds": [
     {
-      "listen": "::",
-      "port": 8080,
+      "listen": "127.0.0.1",
+      "port": 10001,
       "protocol": "vless",
       "settings": { "clients": [{ "id": "9169f7a3ce18345d3d6d0b21a72f74eb" }], "decryption": "none" },
       "streamSettings": { "network": "ws", "wsSettings": { "path": "/5ff9f7fd76701e6c" } },
       "sniffing": { "enabled": true, "destOverride": ["http", "tls", "quic"], "routeOnly": true }
     },
     {
-      "listen": "::",
-      "port": 8081,
+      "listen": "127.0.0.1",
+      "port": 10002,
       "protocol": "trojan",
       "settings": { "clients": [{ "password": "de5809e5-8ebc-4dbd-a418-57e122504c38" }] },
       "streamSettings": { "network": "ws", "wsSettings": { "path": "/57e122504c38" } },
       "sniffing": { "enabled": true, "destOverride": ["http", "tls", "quic"], "routeOnly": true }
     },
     {
-      "listen": "::",
-      "port": 8082,
+      "listen": "127.0.0.1",
+      "port": 10003,
       "protocol": "vmess",
       "settings": { "clients": [{ "id": "de5809e5-8ebc-4dbd-a418-57e122504c38" }] },
       "streamSettings": { "network": "ws", "wsSettings": { "path": "/de5809e5" } },
